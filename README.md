@@ -54,6 +54,16 @@ $ hextable 45
 45 0x2D
 ```
 
+Convert multiple values by passing space seperated decimals
+
+```bash
+$ hextable 45 28 762
+
+45 0x2D
+28 0x1C
+762 0x2FA
+```
+
 # License
 
 [MIT](LICENSE)

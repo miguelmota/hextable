@@ -19,7 +19,11 @@ if [ "$1" ]; then
   if echo $1 | grep -qo "+"; then
     strt="${1:1}"
   else
-    cell $1
+    for arg in "$@"
+    do
+      cell "$arg"
+      printf "\\n"
+    done
     exit 0
   fi
 fi
